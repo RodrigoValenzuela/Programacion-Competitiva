@@ -1,0 +1,10 @@
+# Tutorial del ejercicio 558 de Online Judge
+
+El ejercicio trata de resolver la consulta de si se podría viajar en el tiempo o no.
+
+Para esto, es necesario primero leer los datos N y M, los que corresponderán a la cantidad de sistemas estelares y agujeros de gusano respectivamente.
+Mirando esto como estructuras, N serían los nodos de un grafo, y M las conexiones entre estas, con sus pesos.
+
+Luego de leer estas 2 vairables, siguen M conexiones con sus respectivos pesos.
+Estas conexiones son guardadas en un arreglo para posteriormente hacer un BellmanFord, una vez aplicado el BF, se comprueban si existen ciclos negativos, 
+de ser así, entonces se responde con **possible** de lo contrario con **not possible**.
